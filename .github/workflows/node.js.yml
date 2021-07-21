@@ -14,4 +14,4 @@ jobs:
       with:
         node-version: '12.x'
     - name: Install dependencies
-      run: npm discord.js
+      run: npm install discord.js
