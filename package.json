@@ -1,0 +1,19 @@
+{
+  "name": "Wee-Crystal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+	  "start": "node index.js",
+	  "devStart": "nodemon index.js"
+  },
+  "keywords": ["HeyEyh,discord,node,java,javascript,js,noob"],
+  "author": "HeyEyh",
+  "license": "ISC"
+}
