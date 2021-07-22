@@ -25,7 +25,7 @@ if (msg.content === 'noob') {
 
 msg.channel.send(helpMenuEmbed)
 }
-else if (msg.content === 'hi'){
+else if (msg.content === 'hi homie'){
    msg.channel.send('hello');
 }
 })
