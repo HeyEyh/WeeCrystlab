@@ -7,6 +7,7 @@ const { prefix } = require('./config.json')
 
 client.on("ready", () => {
 console.log('Initialization Complete!')
+console.log(`prefix set to: ${prefix}`)
 })
 
 //help
@@ -25,7 +26,7 @@ if (msg.content === `${prefix}noob`) {
 
 msg.channel.send(helpMenuEmbed)
 }
-else if (msg.content === '`${prefix}hi`'){
+else if (msg.content === `${prefix}hi`){
    msg.channel.send('hello bruv');
 }
 })
