@@ -4,13 +4,12 @@ const Discord = require('discord.js')
 const client = new Discord.Client();
 const { prefix } = require('./config.json')
 
-
+//log display options
 client.on("ready", () => {
 console.log('Initialization Complete!')
 console.log(`prefix set to: ${prefix}`)
 })
 
-//help menu//
 
 client.on("message", msg => {
 if (msg.content === `${prefix}noob`) {
@@ -30,8 +29,8 @@ if (msg.content === `${prefix}noob`) {
 
 msg.channel.send(helpMenuEmbed)
 }
-else if (msg.content === `${prefix}hi`){
-   msg.channel.send('hello');
+else if (msg.content === `${prefix}demand rating`){
+   msg.channel.send('-profile');
 }
 else if (msg.content === `${prefix}server details`) {
 	const serverDetailsNotbasic = new Discord.MessageEmbed()
