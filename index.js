@@ -19,17 +19,38 @@ if (msg.content === `${prefix}noob`) {
 	.setTitle('Help Menu')
 	.setURL('https://github.com/HeyEyh/WeeCrystlab')
 	.setDescription('Need Help?\nDont worry, you are not alone')
-	.setThumbnail('https://github.com/HeyEyh/WeeCrystlab/raw/main/128x128.png')
+	.setThumbnail('https://imgur.com/1d9hSsf.png')
 	.addField('wee', '```diff\n- the default prefix\n```')
 	.addField('noob', '```diff\n- displays this help menu\n```')
+	.addField('server details', '```diff\n- returns all available server details like: name, total members```')
+	.addField('server basic', '```diff\n- returns basic server name and total members```')
 	.addField('hi','```diff\n- returns "hello"\n```')
 	.setTimestamp()
-	.setFooter('From the Scientists at WeeCrystlabs', 'https://github.com/HeyEyh/WeeCrystlab/raw/main/128x128.png');
+	.setFooter('From the Scientists at WeeCrystlabs', 'https://i.imgur.com/1d9hSsf.png');
 
 msg.channel.send(helpMenuEmbed)
 }
 else if (msg.content === `${prefix}hi`){
    msg.channel.send('hello');
+}
+else if (msg.content === `${prefix}server details`) {
+	const serverDetailsNotbasic = new Discord.MessageEmbed()
+	.addField('Server Name',`${msg.guild.name}`)
+	.addField('Total Members', `${msg.guild.memberCount}`)
+	.addField('Created At', `${msg.guild.createdAt}`)
+	.addField('Region', `${msg.guild.region}`)
+	.setFooter(`Owner of this guild: ${msg.guild.owner}`)
+
+	msg.channel.send(serverDetailsNotbasic);
+}
+
+else if (msg.content === `${prefix}server`) {
+
+	const serverDetailsbasic = new Discord.MessageEmbed()
+	.addField(`Server Name`,`${msg.guild.name}`)
+	.addField('Total Members', `${msg.guild.memberCount}`)
+	
+	msg.channel.send(serverDetailsbasic);
 }
 })
 
