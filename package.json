@@ -10,10 +10,12 @@
   },
   "devDependencies": {},
   "scripts": {
-	  "start": "node index.js",
-	  "devStart": "nodemon index.js"
+    "start": "node index.js",
+    "devStart": "nodemon index.js"
   },
-  "keywords": ["HeyEyh,discord,node,java,javascript,js,noob"],
+  "keywords": [
+    "HeyEyh,discord,node,java,javascript,js,noob"
+  ],
   "author": "HeyEyh",
   "license": "ISC"
 }
