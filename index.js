@@ -20,7 +20,9 @@ if (msg.content === `${prefix}noob`) {
 	.setURL('https://github.com/HeyEyh/WeeCrystlab')
 	.setDescription('Need Help?\nWe all need help some time or the other\nDont worry, you are not alone')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addField('hi', 'returna', true)
+	.addField('wee', 'the default prefix', true)
+	.addField('noob', 'displays this help menu',true)
+	.addField('hi','returns ```hello bruv```')
 	.setTimestamp()
 	.setFooter('From the scientists at WeeCrystlabs', 'https://i.imgur.com/wSTFkRM.png');
 
