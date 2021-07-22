@@ -1,8 +1,8 @@
 require('dotenv').config()
 
-import { Client, MessageEmbed } from 'discord.js';
-const client = new Client();
-import { prefix } from './config.json';
+const Discord = require('discord.js')
+const client = new Discord.Client();
+const { prefix } = require('./config.json')
 
 
 client.on("ready", () => {
@@ -14,7 +14,7 @@ console.log(`prefix set to: ${prefix}`)
 
 client.on("message", msg => {
 if (msg.content === `${prefix}noob`) {
-    const helpMenuEmbed = new MessageEmbed()
+    const helpMenuEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Help Menu')
 	.setURL('https://github.com/HeyEyh/WeeCrystlab')
@@ -30,14 +30,6 @@ else if (msg.content === `${prefix}hi`){
    msg.channel.send('hello bruv');
 }
 })
-
-client.on("message", msg =>{
-if(msg.content === `${prefix}spam`){
-	
-	msg.channel.send(`spam is against the rules buddy`)
-}
-})
-
 
 client.login(process.env.BOT_TOKEN)
 
