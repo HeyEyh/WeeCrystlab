@@ -1,3 +1,4 @@
+
 require('dotenv').config()
 
 const Discord = require('discord.js')
@@ -10,7 +11,7 @@ console.log('Initialization Complete!')
 console.log(`prefix set to: ${prefix}`)
 })
 
-//help
+//help menu//
 
 client.on("message", msg => {
 if (msg.content === `${prefix}noob`) {
@@ -28,6 +29,13 @@ msg.channel.send(helpMenuEmbed)
 }
 else if (msg.content === `${prefix}hi`){
    msg.channel.send('hello bruv');
+}
+})
+
+client.on("message", msg =>{
+if(msg.content === `${prefix}spam`{
+	
+	msg.channel.send(`spam is against the rules buddy`)
 }
 })
 
