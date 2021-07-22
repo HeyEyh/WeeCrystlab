@@ -18,18 +18,18 @@ if (msg.content === `${prefix}noob`) {
 	.setColor('#0099ff')
 	.setTitle('Help Menu')
 	.setURL('https://github.com/HeyEyh/WeeCrystlab')
-	.setDescription('Need Help?\nWe all need help some time or the other\nDont worry, you are not alone')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addField('wee', 'the default prefix')
-	.addField('noob', 'displays this help menu')
-	.addField('hi','returns ```hello bruv```')
+	.setDescription('Need Help?\nDont worry, you are not alone')
+	.setThumbnail('https://github.com/HeyEyh/WeeCrystlab/raw/main/128x128.png')
+	.addField('wee', '```diff\n- the default prefix\n```')
+	.addField('noob', '```diff\n- displays this help menu\n```')
+	.addField('hi','```diff\n- returns "hello"\n```')
 	.setTimestamp()
-	.setFooter('From the Scientists at WeeCrystlabs', 'https://i.imgur.com/wSTFkRM.png');
+	.setFooter('From the Scientists at WeeCrystlabs', 'https://github.com/HeyEyh/WeeCrystlab/raw/main/128x128.png');
 
 msg.channel.send(helpMenuEmbed)
 }
 else if (msg.content === `${prefix}hi`){
-   msg.channel.send('hello bruv');
+   msg.channel.send('hello');
 }
 })
 
