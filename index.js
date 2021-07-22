@@ -14,7 +14,7 @@ if (msg.content === 'noob') {
     const helpMenuEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Help Menu')
-	.setURL('not set')
+	.setURL('https://github.com/HeyEyh/WeeCrystlab')
 	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
 	.setDescription('Need Help?\nWe all need help some time or the other\nDont worry, you are not alone')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
