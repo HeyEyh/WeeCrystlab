@@ -10,7 +10,7 @@ console.log('Initialization Complete!')
 })
 
 client.on("message", msg => {
-if (msg.content === 'noob') {
+if (msg.content === '${prefix}noob') {
     const helpMenuEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Help Menu')
